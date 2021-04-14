@@ -109,41 +109,6 @@ export default function Home() {
             </div>
           ) : null}
         </section>
-        <section className='previous-post-container' style={{ padding: 40 }}>
-          <h3>Previous Posts</h3>
-          <div className='previous-post-inner'>
-            <div className='previous-post'>
-              <img src='/images/stock/4.jpg' />
-              <div className='col'>
-                <h5>Lorem Ipsum</h5>
-                <p>
-                  Lorem ipsum odor amet, consectetuer adipiscing elit. Eget
-                  dictum quisque hendrerit torquent sem...
-                </p>
-              </div>
-            </div>
-            <div className='previous-post'>
-              <img src='/images/stock/5.jpg' />
-              <div className='col'>
-                <h5>Lorem Ipsum</h5>
-                <p>
-                  Lorem ipsum odor amet, consectetuer adipiscing elit. Eget
-                  dictum quisque hendrerit torquent sem...
-                </p>
-              </div>
-            </div>
-            <div className='previous-post'>
-              <img src='/images/stock/6.jpg' />
-              <div className='col'>
-                <h5>Lorem Ipsum</h5>
-                <p>
-                  Lorem ipsum odor amet, consectetuer adipiscing elit. Eget
-                  dictum quisque hendrerit torquent sem...
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
 
       <Footer />
