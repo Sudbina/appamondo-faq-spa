@@ -5,13 +5,17 @@ import Footer from '@components/Footer';
 import { LoremIpsum } from 'react-lorem-ipsum';
 import { Row } from 'react-bootstrap';
 import { articleData } from '../article-meta.js';
+import { Icon, InlineIcon } from '@iconify/react';
+import arrowLeftAlt2 from '@iconify/icons-dashicons/arrow-left-alt2';
 
 export default function Home() {
   const [content, setContent] = useState('home');
+  const [selectedArticle, setSelectedArticle] = useState('home');
 
   const updateContent = (key, articleItem) => {
     console.log('Updating content to ', articleItem);
     setContent(key);
+    setSelectedArticle(articleItem);
   };
 
   const back = () => {
@@ -62,27 +66,22 @@ export default function Home() {
                 ))}
               </Row>
             </div>
-          ) : content === 0 ? (
+          ) : (
             <div className='container' style={{ paddingTop: 20 }}>
-              <span onClick={() => back()}>Back</span>
-              <h1 className='article-title'>Custom Solutions</h1>
+              <span className='article-back' onClick={() => back()}>
+                {' '}
+                <Icon icon={arrowLeftAlt2} style={{ fontSize: '20px' }} />
+                Back
+              </span>
+              <h1 className='article-title'>{selectedArticle.title}</h1>
               <p className='article-date'>
-                Posted 04/08/2020 | Updated 24/03/2021
+                Posted {selectedArticle.created} | Updated{' '}
+                {selectedArticle.lastUpdated}
               </p>
               <hr />
               <LoremIpsum p={5} />
             </div>
-          ) : content === 1 ? (
-            <div className='container' style={{ paddingTop: 20 }}>
-              <span onClick={() => back()}>Back</span>
-              <h1 className='article-title'>Zendesk Products</h1>
-              <p className='article-date'>
-                Posted 01/05/2020 | Updated 22/03/2021
-              </p>
-              <hr />
-              <LoremIpsum p={5} />
-            </div>
-          ) : null}
+          )}
         </section>
       </main>
 

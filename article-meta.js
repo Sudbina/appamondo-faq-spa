@@ -9,8 +9,8 @@ export const articleData = [
   },
   {
     title: 'Zendesk Products',
-    created: '04/08/2020',
-    lastUpdated: '24/03/2021',
+    created: '01/07/2020',
+    lastUpdated: '27/02/2021',
     icon: '/images/icons/white/SCOPE.png',
     disabled: false,
     key: 1,

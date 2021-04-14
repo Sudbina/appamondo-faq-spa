@@ -24,10 +24,10 @@ export default function Footer() {
               <h6>Quick Links</h6>
               <ul className='footer-links'>
                 <li>
-                  <a href='#'>About Us</a>
+                  <a href='#'>Main Site</a>
                 </li>
                 <li>
-                  <a href='#'>Contact Us</a>
+                  <a href='#'>API</a>
                 </li>
                 <li>
                   <a href='#'>Careers</a>
