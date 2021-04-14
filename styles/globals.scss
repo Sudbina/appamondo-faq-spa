@@ -118,31 +118,6 @@ main {
   justify-content: space-evenly;
   margin-top: 50px;
 }
-@media only screen and (max-width: 992px) {
-  .hero-title {
-    font-size: 35px;
-    text-align: center;
-  }
-
-  .hero-description {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  .content-card {
-    margin-bottom: 20px;
-  }
-
-  .container {
-    div {
-      justify-content: center !important;
-    }
-  }
-
-  .header-branding-logo {
-    width: 140px;
-  }
-}
 
 .col-left {
   height: 400px;
@@ -169,7 +144,7 @@ main {
   align-items: center;
   justify-content: center;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 5px;
 
   background-size: cover;
   color: white;
@@ -208,24 +183,24 @@ main {
 .content-card {
   &-0 {
     background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
+        45deg,
+        rgba(0, 0, 0, 0.8),
         rgba(0, 0, 0, 0.186)
       ),
       url('../public/images/stock/2.jpg');
   }
   &-1 {
     background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
+        45deg,
+        rgba(0, 0, 0, 0.8),
         rgba(0, 0, 0, 0.186)
       ),
       url('../public/images/stock/3.jpg');
   }
   &-2 {
     background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
+        45deg,
+        rgba(0, 0, 0, 0.8),
         rgba(0, 0, 0, 0.186)
       ),
       url('../public/images/stock/1.jpg');
@@ -233,8 +208,8 @@ main {
   &-3 {
     margin-top: 50px;
     background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
+        45deg,
+        rgba(0, 0, 0, 0.8),
         rgba(0, 0, 0, 0.186)
       ),
       url('../public/images/stock/4.jpg');
@@ -242,8 +217,8 @@ main {
   &-4 {
     margin-top: 50px;
     background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
+        45deg,
+        rgba(0, 0, 0, 0.8),
         rgba(0, 0, 0, 0.186)
       ),
       url('../public/images/stock/5.jpg');
@@ -251,8 +226,8 @@ main {
   &-5 {
     margin-top: 50px;
     background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
+        45deg,
+        rgba(0, 0, 0, 0.8),
         rgba(0, 0, 0, 0.186)
       ),
       url('../public/images/stock/6.jpg');
@@ -435,4 +410,153 @@ main {
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+//tablet
+@media only screen and (max-width: 1024px) {
+  .hero-title {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .hero-description {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .content-card {
+    margin-bottom: 20px;
+  }
+
+  .container {
+    div {
+      justify-content: center !important;
+    }
+  }
+
+  .header-branding-logo {
+    width: 140px;
+  }
+
+  .content-card {
+    &-0 {
+      background-image: linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.186)
+        ),
+        url('../public/images/stock/2.jpg');
+    }
+    &-1 {
+      background-image: linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.186)
+        ),
+        url('../public/images/stock/3.jpg');
+    }
+    &-2 {
+      background-image: linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.186)
+        ),
+        url('../public/images/stock/1.jpg');
+    }
+    &-3 {
+      background-image: linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.186)
+        ),
+        url('../public/images/stock/4.jpg');
+    }
+    &-4 {
+      background-image: linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.186)
+        ),
+        url('../public/images/stock/5.jpg');
+    }
+    &-5 {
+      background-image: linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.186)
+        ),
+        url('../public/images/stock/6.jpg');
+    }
+  }
+}
+
+//mobile
+@media only screen and (max-width: 510px) {
+  .content-wrapper {
+    div.container {
+      padding: 0px 32px;
+    }
+  }
+
+  .content-card {
+    &-0 {
+      margin-top: -30px;
+      background-image: linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.186)
+        ),
+        url('../public/images/stock/2.jpg');
+    }
+    &-1 {
+      margin-top: 50px;
+      background-image: linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.186)
+        ),
+        url('../public/images/stock/3.jpg');
+    }
+    &-2 {
+      margin-top: 50px;
+      background-image: linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.186)
+        ),
+        url('../public/images/stock/1.jpg');
+    }
+    &-3 {
+      margin-top: 50px;
+      margin-top: 50px;
+      background-image: linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.186)
+        ),
+        url('../public/images/stock/4.jpg');
+    }
+    &-4 {
+      margin-top: 50px;
+      background-image: linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.186)
+        ),
+        url('../public/images/stock/5.jpg');
+    }
+    &-5 {
+      margin-top: 50px;
+      background-image: linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.186)
+        ),
+        url('../public/images/stock/6.jpg');
+    }
+  }
+
+  .site-footer {
+    bottom: -20px;
+  }
 }
