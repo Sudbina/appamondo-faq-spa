@@ -90,21 +90,21 @@ export default function Home() {
           ) : content === 'left' ? (
             <div className='container' style={{ paddingTop: 20 }}>
               <span onClick={() => back()}>Back</span>
-              <h1
-                style={{
-                  textAlign: 'center',
-                  marginBottom: 15,
-                  marginTop: -10,
-                }}
-              >
-                Custom Solutions
-              </h1>
+              <h1 className='article-title'>Custom Solutions</h1>
+              <p className='article-date'>
+                Posted 04/08/2020 | Updated 24/03/2021
+              </p>
+              <hr />
               <LoremIpsum p={5} />
             </div>
           ) : content === 'middle' ? (
-            <div className='container'>
+            <div className='container' style={{ paddingTop: 20 }}>
               <span onClick={() => back()}>Back</span>
-              <h2>Zendesk Products</h2>
+              <h1 className='article-title'>Zendesk Products</h1>
+              <p className='article-date'>
+                Posted 01/05/2020 | Updated 22/03/2021
+              </p>
+              <hr />
               <LoremIpsum p={5} />
             </div>
           ) : null}
