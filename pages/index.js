@@ -16,6 +16,7 @@ export default function Home() {
     console.log('Updating content to ', articleItem);
     setContent(key);
     setSelectedArticle(articleItem);
+    window.scrollTo(0, 0);
   };
 
   const back = () => {
@@ -44,6 +45,7 @@ export default function Home() {
                 {articleData.map((articleItem, key) => (
                   <div
                     className={`content-card-${articleItem.key}`}
+                    key={articleItem.key}
                     onClick={
                       !articleItem.disabled
                         ? () => updateContent(key, articleItem)
@@ -84,7 +86,6 @@ export default function Home() {
           )}
         </section>
       </main>
-
       <Footer />
     </div>
   );
