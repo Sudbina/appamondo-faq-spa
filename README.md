@@ -1,6 +1,6 @@
 # Appamondo FAQ Page
 
-[View live at](https://jack-appamondo-faq-technical.netlify.app/)
+[View live here](https://jack-appamondo-faq-technical.netlify.app/)
 
 This is a [Next.js](https://nextjs.org/) v10.1 project and is set up to be instantly deployed to Netlify
 
